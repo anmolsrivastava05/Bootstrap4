@@ -31,6 +31,22 @@ body {
 .navbar-inverse {
   background-color: #512DA8; }
 
+.modal-header {
+  color: floralwhite;
+  background: #512DA8; }
+
+.modal-title {
+  color: floralwhite; }
+
+.close {
+  color: floralwhite; }
+
+.modal-content {
+  background-color: #D1C4E9; }
+
+.modal-footer {
+  background-color: #9575CD; }
+
 .tab-content {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -54,8 +70,12 @@ body {
   position: absolute;
   bottom: 0px; }
 
-.jumbotron-special {
-  padding: 50px 0px 0px 0px;
-  margin: 0px auto;
-  background: white;
-  color: black; }
+.modal-header {
+  color: floralwhite;
+  background: #512DA8; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
+.modal-footer {
+  background-color: #9575CD; }

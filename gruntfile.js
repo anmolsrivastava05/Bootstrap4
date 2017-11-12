@@ -170,6 +170,6 @@ module.exports = function (grunt) {
       'cssmin',
       'uglify',
       'filerev',
-      'usemin'
+      'usemin', 
     ]);
 };

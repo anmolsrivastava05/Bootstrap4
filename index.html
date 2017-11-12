@@ -33,7 +33,7 @@
         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
       </ul>
       <span class="navbar-text">
-        <a data-toggle="modal" data-target="#loginModal">
+        <a id="login-link">
           <span class="fa fa-sign-in"></span> Login</a>
       </span>
     </div>
@@ -75,6 +75,132 @@
     </div>
   </div>
 
+
+  <div class="jumbotron-special">
+  <div id="loginModal1" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+      <div class="modal-content">
+        <div class="modal-header" "lg-primary text-black col-sm-12" style="background-color: #512DA8">
+          <h4 class="modal-title color: black" >Reserve a Table</h4>
+            <button type="button" class="close"
+              data-dismiss="modal">
+              &times;
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+
+          <div class="modal-block">
+            <div class="row">
+            <div class="col-2">
+              <p class="card-text">
+                Number of Guests:
+              </p>
+            </div>
+            <div class="col-sm-8">
+              <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+              </label>
+            </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+          </label>
+          </div>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 4
+              </label>
+            </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> 5
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> 6
+          </label>
+            </div>
+          </div>
+          </div>
+          <br>
+
+          <div class="row">
+          <div class="col-2">
+          <p>
+            Section
+          </p>
+          </div>
+          <div class="col-3">
+
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-success active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                  </label>
+              </div>
+          </div>
+            <br><br>
+
+          </div>
+          <div class="row">
+          <div class="col-2">
+          <p class="card-text">
+            Date and Time
+          </p>
+          </div>
+          <div class="col-5">
+              <div class="input-group date">
+                <span class="input-group-addon">
+                    <span class="fa fa-calendar"></span>
+                </span>
+                      <input type="text" class="form-control textbox-n" id="date" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" placeholder="Date">
+
+                  </div>
+          </div>
+          <div class="col-5">
+                <div class="input-group date">
+                  <span class="input-group-addon">
+                      <span class="fa fa-clock-o"></span>
+                  </span>
+                        <input type="text" class="form-control textbox-n" onfocus="(this.type='date')" onblur="(this.type='text')" id="time" name="time" placeholder="Time">
+
+                    </div>
+
+            </div>
+            <br><br>
+
+          </div>
+          <br>
+          <div class="modal-footer">
+          <div class="row align-self-center">
+          <div class="col">
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-sm">Reserve</button>
+          </div>
+
+          </div>
+        </div>
+
+          </div>
+
+          </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <header class="jumbotron">
       <div class="container">
           <div class="row row-header">
@@ -89,133 +215,17 @@
               </div>
 
               <div class="col-12 col-sm align-self-center">
-                <a role="button" class="btn btn-block btn-sm nav-link btn-warning"
-                data-toggle="modal" data-target="#reservemodal" data-html="true"  title="Or Call us at <br><strong> +852 12345678 </strong>"
-                data-placement="bottom" href="#reserveform">Reserve Table</a>
+                <button id="reservelink" type="button" class="btn btn-block btn-warning">Reserve Table</button>
               </div>
             </div>
           </div>
 </header>
 
-                <div class="jumbotron jumbotron-special">
-                  <div style="color:black">
+
                 <div id="reservemodal" class="modal fade" role="dialog" >
                   <div class="modal-dialog" role="content" text-"black">
                     <div class="modal-content">
-                      <div class="modal-header" "lg-primary text-black col-sm-12" style="background-color: white">
-                        <h4 class="modal-title color: black" >Reserve a Table</h4>
-                          <button type="button" class="close"
-                            data-dismiss="modal">
-                            &times;
-                          </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="container">
 
-                        <div class="modal-block">
-                          <div class="row">
-                          <div class="col-2">
-                            <p class="card-text">
-                              Number of Guests:
-                            </p>
-                          </div>
-                          <div class="col-sm-8">
-                            <div class="form-check form-check-inline">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                            </label>
-                          </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-                        </label>
-                        </div>
-                          <div class="form-check form-check-inline">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 4
-                            </label>
-                          </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> 5
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> 6
-                        </label>
-                          </div>
-                        </div>
-                        </div>
-                        <br>
-
-                        <div class="row">
-                        <div class="col-2">
-                        <p>
-                          Section
-                        </p>
-                        </div>
-                        <div class="col-3">
-
-                              <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
-                                </label>
-                                <label class="btn btn-danger">
-                                  <input type="radio" name="options" id="option2" autocomplete="off">Smoking
-                                </label>
-                            </div>
-                        </div>
-                          <br><br>
-
-                        </div>
-                        <div class="row">
-                        <div class="col-2">
-                        <p class="card-text">
-                          Date and Time
-                        </p>
-                        </div>
-                        <div class="col-5">
-                            <div class="input-group date">
-                              <span class="input-group-addon">
-                                  <span class="fa fa-calendar"></span>
-                              </span>
-                                    <input type="text" class="form-control textbox-n" id="date" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" placeholder="Date">
-
-                                </div>
-                        </div>
-                        <div class="col-5">
-                              <div class="input-group date">
-                                <span class="input-group-addon">
-                                    <span class="fa fa-clock-o"></span>
-                                </span>
-                                      <input type="text" class="form-control textbox-n" onfocus="(this.type='date')" onblur="(this.type='text')" id="time" name="time" placeholder="Time">
-
-                                  </div>
-
-                          </div>
-                          <br><br>
-
-                        </div>
-                        <br>
-                        <div class="row align-self-center">
-                        <div class="col">
-                          <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
-                          <button type="submit" class="btn btn-primary btn-sm">Reserve</button>
-                        </div>
-
-                        </div>
-
-                        </div>
-
-                        </div>
-
-                        </div>
                         </div>
                       </div>
 
@@ -243,7 +253,7 @@
                 <img class="d-block img-fluid"
                   src="img/buffet.png" alt="buffet">
                   <div class="carousel-caption d-none d-md-block">
-                    <h2>Weekend Grand Buffet &nbsp <span class="badge badge-danger">NEW</span></h2>
+                    <h2>Weekend Grand Buffet &nbsp; <span class="badge badge-danger">NEW</span></h2>
                     <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                   </div>
                 </div>

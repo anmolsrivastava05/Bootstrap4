@@ -1,21 +1,8 @@
-$lt-gray: #ddd;
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
-
-// Height variables
-$carousel-item-height: 300px;
-
-@mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin:0px auto;
-	padding: $pad-up-dn $pad-left-right;
-}
-
 .row-header {
   margin: 0px auto;
   padding: 0px auto;
 }
- 
+
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
@@ -51,6 +38,28 @@ body {
   background-color: #512DA8;
 }
 
+.modal-header {
+     color: floralwhite;
+     background: #512DA8;
+ }
+
+ .modal-title {
+	 color:floralwhite;
+ }
+
+.close{
+		 color: floralwhite;
+}
+
+
+ .modal-content {
+	 background-color: #D1C4E9;
+ }
+
+.modal-footer {
+  background-color: #9575CD;
+}
+
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -79,9 +88,15 @@ body {
   bottom: 0px;
 }
 
-.jumbotron-special {
-  padding: 50px 0px 0px 0px;
-  margin: 0px auto;
-  background: white;
-  color:black;
+
+.modal-header{
+	color: floralwhite;
+	background: #512DA8;
+}
+
+.modal-body{
+	background-color: #D1C4E9;
+}
+.modal-footer {
+  background-color: #9575CD;
 }
